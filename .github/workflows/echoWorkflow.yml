@@ -11,14 +11,9 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Print current date
         run: |
-          echo "Current date (UTC): $(date -u)"
-
-      - name: Print current date (local)
-        run: |
-          echo "Current date (local): $(date)"
-
-  workflow_dispatch: # Manual trigger from Actions UI
+          echo "Current date and time:"
+          date
