@@ -1,4 +1,4 @@
-me: Spell Check Markdown Files
+name: Spell Check Markdown Files
 
 on:
   pull_request:
